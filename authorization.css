@@ -1,0 +1,169 @@
+body{
+    background: linear-gradient(to bottom, #0048ff,#54c9ff);
+    background-size: 100%;
+
+    grid-template-areas:
+    "header header header"
+    "ads article news"
+    "footer footer footer"; 
+
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 17% 1fr 17%;
+    
+    min-height: 100vh;
+    margin: 0;
+}
+.pageHeader{
+    grid-area: header;
+    background:linear-gradient(to right,#87CEFA,#1E90FF);
+}
+.pageFooter{
+    grid-area: footer;
+    background-color: white;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+.ActiveLink{
+    color: wheat;
+}
+.ActiveLink:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+.Link:hover{
+    color: darkblue;
+    text-decoration: underline;    
+}
+.LogoLabel{
+    margin: 0;
+}
+.pageArticle{
+    grid-area: article;
+}
+.pageNews{
+    grid-area: news;
+}
+.pageAds{
+    grid-area: ads;
+}
+.unallocatable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+}
+.logo{
+    font-size: 35;
+
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
+    margin-left: 10;
+    text-decoration: none;
+}
+.AboutLink{
+    margin-left: 15;
+    font-size: 20;
+    text-decoration: none;
+}
+.WeatherLink{
+    font-size: 20;
+    margin-left: 50;
+    text-decoration: none;
+}
+.news{
+    font-size: 20;
+    margin-left: 15;
+    text-decoration: none;    
+}
+.WelcomeBox{
+    border-radius: 10px;
+    width: 1fr;
+    height: 200px;
+    font-size: 40;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 20;
+    
+    background-color: rgba(255,255,255,0.85); 
+}
+.authorization{
+    margin: 10;
+    margin-right: 30;
+    float: right;
+}
+.RegistrationImg{
+width: 30;
+}
+.AuthorisationField{
+    font-size: 20;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50;
+    width: 700;
+    height: 420px;
+    margin-bottom: 5px;
+
+    background-color: rgba(255,255,255,0.85);
+}
+.AuthorizationTable{
+    margin: auto;
+}
+.UserIcon{
+    width: 100;
+    margin: 15;
+}
+.authorize{ 
+    font-size: 35;
+    text-align: center;
+}
+.AuthorisationLabels{
+    margin-left: 25%;
+    margin-bottom: 0;
+}
+.InputLogin{
+    margin-left: 25%;
+    width: 50%;
+    height: 25;
+    border-radius: 5px;   
+    border: 1px solid gray;
+    outline: none;
+}
+.InputPassword{
+    margin-left: 25%;
+    width: 50%;
+    height: 25;
+    border-radius: 5px;   
+    border: 1px solid gray;
+    outline: none;
+}
+.LoginButton{
+    background-color: white;
+    border: none;
+    color: #4CAF50;
+    padding: 15px 32px;
+    font-size: 15px;
+    margin-left: 20%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: 2px solid #4CAF50;
+    border-radius: 15px;
+    outline: none;
+  }
+.LoginButton:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+.RegistrationLink{
+    color: cornflowerblue;
+    margin-left: 10;
+    text-decoration: none;
+}

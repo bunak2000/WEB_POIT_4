@@ -1,0 +1,127 @@
+body{
+    background: linear-gradient(to bottom, #0048ff,#54c9ff);
+    background-size: 100%;
+
+    min-height: 100vh;    
+
+    grid-template-areas:
+    "header header header"
+    "ads article news"
+    "footer footer footer"; 
+
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 17% 1fr 17%;   
+
+    margin: 0;
+}
+.pageHeader{
+    grid-area: header;
+    background:linear-gradient(to right,#87CEFA,#1E90FF);
+}
+.ActiveLink{
+    color: wheat;
+}
+.ActiveLink:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+.Link:hover{
+    color: darkblue;
+    text-decoration: underline;    
+}
+.pageFooter{
+    grid-area: footer;
+    background-color: white;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+.pageArticle{
+    grid-area: article;
+}
+.pageNews{
+    grid-area: news;
+}
+.pageAds{
+    grid-area: ads;
+}
+.logo{
+    font-size: 35;
+
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
+    margin-left: 10;
+    text-decoration: none;
+}
+.AboutLink{
+    margin-left: 15;
+    font-size: 20;
+    text-decoration: none;
+}
+.LogoLabel{
+    margin: 0;
+}
+.unallocatable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+}
+.WeatherLink{
+    font-size: 20;
+    margin-left: 50;
+    text-decoration: none;
+}
+.news{
+    font-size: 20;
+    margin-left: 15;
+    text-decoration: none;    
+}
+.NewsField{
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 5px;
+    padding-top: 10;
+    padding-bottom: 10;
+    background-color: rgba(255,255,255,0.75); 
+    font-size: 20;
+}
+.welcome_box{
+    border-radius: 10px;
+    width: 50%;
+    min-height: 200px;
+    min-width: 200px;
+    font-size: 40;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    margin: auto;
+    margin-top: 25;
+    
+    background-color: rgba(255,255,255,0.85); 
+}
+.authorization{
+    margin: 10;
+    margin-right: 30;
+    float: right;
+}
+.RegistrationImg{
+width: 30;
+}
+.about{
+margin: auto;
+}
+.NewsText{
+    margin-left: 25;
+    margin-right: 25;
+    margin-top: 15;
+    margin-bottom: 15;
+}

@@ -1,0 +1,130 @@
+body{
+    background: linear-gradient(to bottom, #0048ff,#54c9ff);
+    background-size: 100%;
+
+    grid-template-areas:
+    "header header header"
+    "ads article news"
+    "footer footer footer"; 
+
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 17% 1fr 17%;
+    
+    min-height: 100vh;
+    margin: 0;
+}
+.pageHeader{
+    grid-area: header;
+    background:linear-gradient(to right,#87CEFA,#1E90FF);
+}
+.LogoLabel{
+    margin: 0;
+}
+.ActiveLink{
+    color: wheat;
+}
+.ActiveLink:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+.Link:hover{
+    color: darkblue;
+    text-decoration: underline;    
+}
+.pageFooter 
+{
+    grid-area: footer;
+    background-color: white;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+.pageArticle{
+    grid-area: article;
+}
+.pageNews{
+    grid-area: news;
+}
+.pageAds{
+    grid-area: ads;
+}
+.logo{
+    font-size: 35;
+
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
+    margin-left: 10;
+    text-decoration: none;
+}
+.AboutLink{
+    margin-left: 15;
+    font-size: 20;
+    text-decoration: none;
+}
+.unallocatable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+}
+.WeatherLink{
+    font-size: 20;
+    margin-left: 50;
+    text-decoration: none;
+}
+.news{
+    font-size: 20;
+    margin-left: 15;
+    text-decoration: none;    
+}
+.AboutField{
+    border-radius: 10px;
+    width: 1fr;
+    min-height: 100px;
+    min-width: 200px;
+    margin-top: 50;
+    margin-bottom: 5px;
+    padding: 30;
+    background-color: rgba(255,255,255,0.75); 
+    font-size: 20;
+
+    text-align: center;
+
+    display: grid;
+}
+.WelcomeBox{
+    border-radius: 10px;
+    width: 50%;
+    min-height: 200px;
+    font-size: 40;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    margin: auto;
+    margin-top: 25;
+    
+    background-color: rgba(255,255,255,0.85); 
+}
+.authorization{
+    margin: 10;
+    margin-right: 30;
+    float: right;
+}
+.RegistrationImg{
+width: 30;
+}
+.about{
+margin: auto;
+}
+.LabLinks{
+    margin-top: 10px;
+    color: cornflowerblue;
+    font-size: 20px;
+}
